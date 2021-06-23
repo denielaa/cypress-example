@@ -1,0 +1,25 @@
+{
+  "name": "cypress-example",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "cy:install": "cypress install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denielaa/cypress-example.git"
+  },
+  "author": "Deniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denielaa/cypress-example/issues"
+  },
+  "homepage": "https://github.com/denielaa/cypress-example#readme",
+  "dependencies": {
+    "cypress": "^7.5.0"
+  }
+}
