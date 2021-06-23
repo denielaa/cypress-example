@@ -8,7 +8,7 @@ describe('Orders module',  () => {
   })
 
 
-  it('Create order', () => {
+  it('Create a draft order', () => {
     cy.visit('/');
     cy.get('#mobile-number').click();
     cy.get('#mobile-number').type('1987654321');
@@ -23,10 +23,10 @@ describe('Orders module',  () => {
     cy.wait('@verifyOtp');
 
     cy.get('[data-cy=add-order-button]').click();
-    
+
     cy.wait('@getCustomers')
     cy.get('[data-cy="customer-0"] .center-dot').click();
-    
+
     cy.wait('@getOutlets')
     cy.get('[data-cy="outlet-0"] .text-sm').click();
 
