@@ -11,7 +11,7 @@ describe('Orders module',  () => {
   it('Create a draft order', () => {
     cy.visit('/');
     cy.get('#mobile-number').click();
-    cy.get('#mobile-number').type('1987654321');
+    cy.get('#mobile-number').type('12333312');
     cy.get('[data-cy=button]').click();
     cy.wait('@requestOtp');
 
